@@ -1,6 +1,6 @@
 {
   "name": "gulp-angular-inject-graph",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Generate modules dependencies graph",
   "main": "index.js",
   "scripts": {
@@ -33,7 +33,7 @@
     "intern": "^3.3.1"
   },
   "dependencies": {
-    "angular-inject-graph": "file:~/git-work/angular-inject-graph",
+    "angular-inject-graph": "^0.3.0",
     "dot": "^1.0.3",
     "through2": "^2.0.1",
     "gulp-util": "^3.0.7",
