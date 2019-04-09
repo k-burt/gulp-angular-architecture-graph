@@ -45,7 +45,7 @@ digraph dependencies {
 
       node[shape="{4}"]
       {{~module.components :component}}
-        "{{= component.name }}"[label="{{= component.name }}", fillfillcolor=8, style="filled"]
+        "{{= component.name }}"[label="{{= component.name }}", fillcolor=8, style="filled"]
       {{~}}
 
 
