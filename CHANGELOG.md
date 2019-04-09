@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## 0.0.7 - 2019-04-08
+### Changes
+- Replaces angular-architecture-graph with angular-inject-graph
+
 ## 0.0.6 - 2018-06-12
 ### Features
 - largeGraph option

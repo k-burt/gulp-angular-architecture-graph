@@ -1,19 +1,19 @@
 'use strict';
 
-var architectureGraph = require('angular-architecture-graph'),
-    dot               = require('dot'),
-    os                = require('os'),
-    path              = require('path'),
-    fs                = require('fs-extra'),
-    Q                 = require('q'),
-    file              = require('file'),
-    process           = require('child_process');
+var injectGraph = require('angular-inject-graph'),
+    dot         = require('dot'),
+    os          = require('os'),
+    path        = require('path'),
+    fs          = require('fs-extra'),
+    Q           = require('q'),
+    file        = require('file'),
+    process     = require('child_process');
 
 dot.templateSettings.strip = false;
 
 module.exports = function(gutil) {
 
-    var basePath = 'node_modules/gulp-angular-architecture-graph/';
+    var basePath = 'node_modules/gulp-angular-inject-graph/';
 
     if (!fs.existsSync(basePath)) {
         basePath = '';
@@ -127,7 +127,7 @@ module.exports = function(gutil) {
     },
 
     analyseFiles = function(file, options) {
-        var graph = architectureGraph(file, options),
+        var graph = injectGraph(file, options),
             i = 0,
             _tmp = graph.angular.modules,
             len = _tmp.length;
